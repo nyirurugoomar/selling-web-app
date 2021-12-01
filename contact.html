@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+        <title>Contact</title>
+    
+    </head>
+
+<body>
+    <div id="preloader"></div>
+
+    <nav>
+        <label class="logo"><span>B</span>eyOn✊</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="Register.html">Register</a></li>
+          <li><a id="log" href="#">Login</a></li>
+        </ul>
+        <label id="icon">
+          <i class="fas fa-bars"></i>
+        </label>
+      </nav>
+
+    <!--contact section start-->
+    <div class="contact-section">
+        <div class="contact-info">
+            <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
+            <div><i class="fas fa-envelope"></i>Selling@gmail.com</div>
+            <div><i class="fas fa-phone-alt"></i>+250 700 000 000</div>
+            <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form class="contact" action="" method="post">
+                <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" name="submit" class="send-btn" value="Send">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <h1>@2021 selling corporation ltd All Rights Reserved.</h1>
+    </div>
+
+    <script src="./app.js"></script>
+
+    <script>
+        // mobile_menu
+            $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            })
+            })
+    </script>
+
+    <script>
+
+        // preloader
+
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+
+</html>

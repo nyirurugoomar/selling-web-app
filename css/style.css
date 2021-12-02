@@ -16,9 +16,8 @@ body {
   align-items: center;
 }
 
-span{
+span {
   color: crimson;
-  
 }
 
 .search-input {
@@ -45,15 +44,14 @@ span{
   margin-top: 10%;
 }
 
-#log{
+#log {
   color: white;
-  background:crimson;
+  background: crimson;
   border-radius: 30px;
   cursor: pointer;
-  
 }
 
-#log:hover{
+#log:hover {
   background: #e74c3c;
 }
 
@@ -124,19 +122,18 @@ span{
   height: 40px;
 }
 
-#answer{
+#answer {
   display: flex;
   border: 1px solid black;
   padding: 10px;
   flex-wrap: flex;
   justify-content: space-around;
 }
-#answer h1{
+#answer h1 {
   display: flex;
   padding: 10px;
   border: 1px solid black;
   align-items: center;
-
 }
 
 .button {
@@ -300,7 +297,7 @@ span{
     margin: 30px 50px;
     align-items: center;
   }
-  
+
   .purchase-box {
     margin: 30px 50px;
   }
@@ -344,8 +341,7 @@ label.logo {
   color: white;
   padding: 0 100px;
   line-height: 80px;
-  font-family: 'Permanent Marker', cursive;
-  
+  font-family: "Permanent Marker", cursive;
 }
 nav ul {
   float: right;
@@ -384,10 +380,10 @@ nav #icon {
 @media (max-width: 1048px) {
   label.logo {
     font-size: 32px;
-    padding-left: 60px;
+    padding-left: 10px;
   }
   nav ul {
-    margin-right: 20px;
+    margin-right: 50px;
   }
   nav a {
     font-size: 17px;
@@ -424,6 +420,9 @@ nav #icon {
   nav ul.show {
     left: 0;
     z-index: 9;
+  }
+  .save,.cancel{
+    width: 100%;
   }
 }
 

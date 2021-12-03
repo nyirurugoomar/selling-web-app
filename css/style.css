@@ -275,27 +275,31 @@ span {
   .contact-form .text-box {
     width: 100%;
   }
+  .search-input input {
+    width: 75%;
+  }
 }
 
 /*media query for register*/
 
 @media screen and (max-width: 950px) {
-  .pname {
-    margin: 30px 20px;
-  }
   .pname input {
-    width: 90%;
-    margin: 10px 50px;
+    width: 70%;
+    margin: auto 10px;
   }
-
+  .selling-form input {
+    width: 80%;
+  }
+  .cost-form input {
+    width: 80%;
+  }
   .profile-pic-div {
-    margin: 30px 50px;
+    margin: 40px 40px;
     align-items: center;
   }
   .form-purchase {
     flex-direction: column;
-    margin: 30px 50px;
-    align-items: center;
+    margin: auto 20px;
   }
 
   .purchase-box {
@@ -310,17 +314,18 @@ span {
     display: flex;
     text-decoration: none;
   }
+
   .save {
     width: 40%;
-    margin-bottom: 30px;
+    margin-right: 20px;
   }
   .cancel {
-    width: 40%;
+    width: 50%;
   }
 
-  .footer-register {
+  .footer h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
   #uploadBtn {
     align-items: center;
@@ -420,9 +425,6 @@ nav #icon {
   nav ul.show {
     left: 0;
     z-index: 9;
-  }
-  .save,.cancel{
-    width: 100%;
   }
 }
 

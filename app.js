@@ -38,11 +38,11 @@ file.addEventListener("change", function () {
 function calculate(){
   var field1 = document.getElementById("sell-info").value;
   var field2 = document.getElementById("cost-info").value;
-  var result = parseFloat(field1)+parseFloat(field2);
+  result = parseFloat(field1)+parseFloat(field2);
   var name = document.getElementById("fname").value;
 
   if(!isNaN(result)){
-    document.getElementById("answer").innerHTML="The name of Product is " +name+ " The sum of product "+result;
+    document.getElementById("answer").innerHTML="The name of Product is " +name+ " The selling on product is "+field1+ " The cost on product is"+field2;
     
 
   }
@@ -54,10 +54,12 @@ function calculate(){
 var inputs = document.querySelectorAll('input');
 var btnClear = document.querySelector('cancel')
 
-// function reset(){
-//   document.getElementById("answer").remove();
+function reset(){
+  document.getElementById("answer").remove();
   
-// }
+  
+  
+}
 
 
 

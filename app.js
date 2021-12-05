@@ -46,9 +46,6 @@ function calculate(){
     
 
   }
-
-  
-
 }
 
 var inputs = document.querySelectorAll('input');
@@ -56,10 +53,9 @@ var btnClear = document.querySelector('cancel')
 
 function reset(){
   document.getElementById("answer").remove();
-  
-  
-  
+
 }
+
 
 
 

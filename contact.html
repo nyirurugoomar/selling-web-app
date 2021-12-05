@@ -32,7 +32,7 @@
           <li><a href="#">Services</a></li>
           <li><a class="active" href="contact.html">Contact</a></li>
           <li><a href="Register.html">Register</a></li>
-          <li><a id="log" href="#">Login</a></li>
+          <a href="#" class="buttoneke" id="button-pop">Login</a>
         </ul>
         <label id="icon">
           <i class="fas fa-bars"></i>
@@ -59,6 +59,34 @@
     </div>
 
 
+    <!--login form popup  -->
+
+<div class="popup" id="here">
+    <div class="popup-content">
+        <img src="https://img.icons8.com/fluency-systems-filled/48/000000/delete-sign.png" class="close"/>
+        <label class="logo"><span>B</span>eyOn✊</label>
+        <!-- <img src="https://img.icons8.com/office/80/000000/user.png"/> -->
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <a href="#" class="buttoneke">Login</a>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end popup login form -->
+
     <div class="footer">
         <h1>@2021 <span>B</span>eyOn✊ corporation ltd All Rights Reserved.</h1>
     </div>
@@ -72,7 +100,20 @@
                 $('ul').toggleClass('show');
             })
             })
+
+            document.getElementById("button-pop").addEventListener("click", function(){
+
+document.querySelector(".popup").style.display = "flex";
+})
+
+document.querySelector(".close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+})
+
+
     </script>
+
+
 
     <script>
 

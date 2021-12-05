@@ -19,26 +19,54 @@ body {
 span {
   color: crimson;
 }
+.search {
+  margin-top: 20px;
+  text-align: center;
+  width: 90%;
+}
+.search > input {
+  flex: 1;
+  border-radius: 40px;
+  outline: none;
+  text-align: left;
+  padding: 20px;
+  width: 30%;
+  border: none;
+  border-color: gray;
+  border-style: solid;
+}
 
-.search-input {
+.cta {
+  width: 15%;
+  padding: 20px;
+  border-radius: 2.3rem;
+  border: none;
+  background-color: crimson;
+  cursor: pointer;
+}
+.cta a {
+  text-decoration: none;
+  color: white;
+}
+/* .search-input  {
   text-align: center;
   justify-content: center;
-}
-.search-input input {
+} */
+/* .search-input input {
   width: 500px;
   height: 50px;
   background-color: white;
   border-radius: 30px;
   align-items: center;
   padding: 20px;
-}
-.search-input :hover {
+} */
+/* .search-input :hover {
   box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
 }
 .search-input i {
   font-size: 20px;
   color: #777;
-}
+} */
 .footer {
   text-align: center;
   margin-top: 10%;
@@ -275,8 +303,15 @@ span {
   .contact-form .text-box {
     width: 100%;
   }
-  .search-input input {
+  /* .search-input input {
     width: 75%;
+  } */
+  .search input{
+    width: 75%;
+  }
+  .cta {
+    width: 50%;
+    margin-top: 20px;
   }
 }
 

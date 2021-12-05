@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        
-        <title>Register</title>
-    
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+
+    <title>Register</title>
+
+</head>
 
 <body>
     <div id="preloader"></div>
@@ -22,20 +24,20 @@
     <nav>
         <label class="logo"><span>B</span>eyOn✊</label>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a class="active" href="Register.html">Register</a></li>
-          <li><a id="log" href="#">Login</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="Register.html">Register</a></li>
+            <li><a id="log" href="#">Login</a></li>
         </ul>
         <label id="icon">
-          <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
         </label>
-      </nav>
+    </nav>
 
     <form action="" class="pname">
         <label for="pname">NAME<span>*</span></label>
-        <input type="text" id="fname" name="" autocomplete="OFF" placeholder="Name of product" ><br>
+        <input type="text" id="fname" name="" autocomplete="OFF" placeholder="Name of product"><br>
     </form>
 
 
@@ -56,7 +58,7 @@
         <div class="cost-form">
 
             <label for="">Cost price<span>*</span></label>
-            <input type="number" id="cost-info" name="n_cost" autocomplete="OFF" required><br>
+            <input type="number" value="test1" id="cost-info" name="n_cost" autocomplete="OFF" required><br>
         </div>
         <h1 id="answer"></h1>
 
@@ -66,58 +68,57 @@
         <button class="save" id="submit" onclick="calculate()">SAVE</button>
         <button class="cancel" onclick="reset()">CANCEL</button>
     </div>
-<script>
-    $("#submit").click(function(){
-        var sell_info = $("#sell-info").val();
-        var cost_info = $("#cost-info").val();
+    <script>
+        $("#submit").click(function () {
+            var sell_info = $("#sell-info").val();
+            var cost_info = $("#cost-info").val();
 
-        if(sell_info == '' || cost_info == ''){
-            swal({
-                title: "Fields Empty!!!",
-                text: "Please check the missing field",
-                icon: "warning",
-                button: "Ok",
+            if (sell_info == '' || cost_info == '') {
+                swal({
+                    title: "Fields Empty!!!",
+                    text: "Please check the missing field",
+                    icon: "warning",
+                    button: "Ok",
                 });
-        }else if(sell_info<cost_info){
-            swal({
-                title: "Fields Empty!!!",
-                text: "Please check the missing field",
-                icon: "warning",
-                button: "Ok",
+            } else if (sell_info < cost_info) {
+                swal({
+                    title: "Fields Empty!!!",
+                    text: "Please check the missing field",
+                    icon: "warning",
+                    button: "Ok",
                 });
-        }
-        
+            }
+
         });
-
-</script>
+    </script>
 
 
     <div class="footer">
         <h1>@2021 <span>B</span>eyOn✊ corporation ltd All Rights Reserved.</h1>
     </div>
 
-        <script src="./app.js"></script>
+    <script src="./app.js"></script>
 
-        <script>
-            // mobile_menu
-                $(document).ready(function(){
-                $('#icon').click(function(){
-                    $('ul').toggleClass('show');
-                })
-                })
-        </script>
+    <script>
+        // mobile_menu
+        $(document).ready(function () {
+            $('#icon').click(function () {
+                $('ul').toggleClass('show');
+            })
+        })
+    </script>
 
 
 
-            <script>
-                // preloader
+    <script>
+        // preloader
 
-                var loader = document.getElementById("preloader");
+        var loader = document.getElementById("preloader");
 
-                window.addEventListener("load", function(){
-                loader.style.display = "none";
-                })
-            </script>
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
 
 
 </body>

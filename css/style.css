@@ -349,7 +349,9 @@ span {
   .contact-section {
     flex-direction: column;
   }
-  .contact-info,
+  .contact-info{
+    margin: 0 10px;
+  }
   .contact-form {
     margin: 30px 50px;
   }
@@ -362,7 +364,9 @@ span {
   /* .search-input input {
     width: 75%;
   } */
-
+  .search{
+    margin: 0 20px;
+  }
   .search input {
     width: 75%;
   }

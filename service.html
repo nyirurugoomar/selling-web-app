@@ -104,67 +104,27 @@
         </div>
     </div>
 
+  <!--login form popup  -->
 
+  <div class="popup" id="here">
+    <div class="popup-content">
+        <img src="https://img.icons8.com/fluency-systems-filled/48/000000/delete-sign.png" class="close"/>
+        <label class="logo"><span>B</span>eyOn✊</label>
+        <!-- <img src="https://img.icons8.com/office/80/000000/user.png"/> -->
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <a href="#" class="buttoneke">Login</a>
 
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
     <div class="footer">
         <h1>@2021 <span>B</span>eyOn✊ corporation ltd All Rights Reserved.</h1>
 
     </div>
 
+    <script src="./app.js"></script>
 
     <script>
 
@@ -176,6 +136,31 @@
             loader.style.display = "none";
         })
     </script>
+
+
+
+<script>
+    // mobile_menu
+        $(document).ready(function(){
+        $('#icon').click(function(){
+            $('ul').toggleClass('show');
+        })
+        })
+
+        document.getElementById("button-pop").addEventListener("click", function(){
+
+document.querySelector(".popup").style.display = "flex";
+})
+
+document.querySelector(".close").addEventListener("click", function(){
+document.querySelector(".popup").style.display = "none";
+})
+
+
+</script>
+
+
+
 
 </body>
 </html>

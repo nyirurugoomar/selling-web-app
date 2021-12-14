@@ -198,6 +198,8 @@ span {
   padding: 70px 70px;
 }
 
+
+
 .form-purchase div {
   font-size: 40px;
 }
@@ -346,14 +348,17 @@ span {
 }
 
 @media screen and (max-width: 950px) {
+  #preloader{
+    background-size: 50%;
+  }
   .contact-section {
     flex-direction: column;
   }
   .contact-info{
-    margin: 0 10px;
+    margin: 30px 10px;
   }
   .contact-form {
-    margin: 30px 50px;
+    margin: 50px 50px;
   }
   .contact-form h2 {
     font-size: 20px;
@@ -374,6 +379,7 @@ span {
     width: 50%;
     margin-top: 20px;
   }
+  
 }
 
 /*media query for register*/
@@ -521,6 +527,10 @@ nav #icon {
   nav ul.show {
     left: 0;
     z-index: 9;
+  }
+  .footer h1{
+    font-size: 12px;
+    margin-bottom: 20px;
   }
 }
 
